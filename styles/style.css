@@ -79,8 +79,6 @@ ol {
   justify-content: space-between;
   align-items: flex-start;
   column-gap: 40px;
-  min-width: 711px;
-  min-height: 54px;
 }
 
 .search-form__fieldset {
@@ -127,7 +125,7 @@ ol {
   min-inline-size: 25px;
   min-block-size: 27px;
   border: none;
-  color: rgba(255 255 255 / 0.7);
+  color: #fff;
   border-block-start: 1px solid #fff;
   border-block-end: 1px solid #fff;
   background-color: transparent;
@@ -283,6 +281,9 @@ ol {
   text-align: left;
   text-decoration: none;
   margin-bottom: 6px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .content__video-card-description {
@@ -293,6 +294,9 @@ ol {
   letter-spacing: 0em;
   text-align: left;
   text-transform: none;
+  text-overflow: ellipsis;
+  line-clamp: 4;
+  overflow: hidden;   
 }
 
 .content__video-card-thumbnail {
