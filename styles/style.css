@@ -55,7 +55,7 @@ ol {
   align-items: flex-end;
   inline-size: 1140px;
   column-gap: 30px;
-  padding: 126px 23px;
+
 }
 
 
@@ -84,12 +84,15 @@ ol {
 .search-form__fieldset {
   border: none;
   width: 40%;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .search-form__fieldset-title {
-  font-family: 'Fira Sans Condensed', sans-serif ;
-  font-size: 18px;
-  font-weight: 400;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
   margin-block-end: 5px;
   line-height: 22px;
   letter-spacing: 0em;
@@ -106,7 +109,7 @@ ol {
   display: flex;
   align-items: center;
   gap: 5px;
-  width: fit-content;
+
   cursor: pointer;
 
 
@@ -122,7 +125,7 @@ ol {
 }
 
 .search-form__textfield {
-  min-inline-size: 25px;
+  inline-size: 100%;
   min-block-size: 27px;
   border: none;
   color: #fff;
@@ -130,7 +133,8 @@ ol {
   border-block-end: 1px solid #fff;
   background-color: transparent;
   font-family: inherit;
-  font-size:  initial;
+  font-size:  inherit;
+  font-weight: inherit;
   appearance: none;
 }
 
@@ -194,9 +198,13 @@ ol {
 
 .more-button {
   inline-size: 100%;
-  min-block-size: 34px;
+  block-size: 34px;
+  padding: 5px 0;
   align-content: center;
   justify-content: center;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .content__details {
@@ -205,6 +213,7 @@ ol {
   justify-content: space-between;
 
   min-width: 399px;
+  max-height: 534px;
   gap: 26px;
   inline-size: 100%;
   block-size: 100%;
@@ -231,6 +240,19 @@ ol {
 
 .content__accent {
   color: #545050;
+}
+
+.content__list-container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 399px;
+  max-height: 300px;
+  gap: 26px;
+  inline-size: 100%;
+  block-size: 100%;
+  overflow-y: auto;
 }
 
 .content__list {
