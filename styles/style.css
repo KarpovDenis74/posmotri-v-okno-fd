@@ -211,10 +211,7 @@ ol {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
   gap: 26px;
-
-  min-width: 399px;
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 46px;
@@ -253,7 +250,7 @@ ol {
   overflow-x: none;
   overflow-y: auto;
   inline-size: 100%;
-  block-size: 100%;
+  block-size: 399px;
 }
 
 .content__list {
